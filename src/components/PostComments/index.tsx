@@ -19,11 +19,10 @@ const Post = () => {
 			<ul className={styles["post-comments"]}>
 				{comments.map(({ comment, id }) => (
 					<li
+						data-testid="comentario-item"
 						className={styles["post-comment"]}
 						key={id}>
-						<p
-							data-testid="comentario-adicionado"
-							className={styles["post-comment-content"]}>
+						<p className={styles["post-comment-content"]}>
 							<>{comment}</>
 						</p>
 					</li>
